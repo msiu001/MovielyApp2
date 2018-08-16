@@ -115,7 +115,6 @@ C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\Microsoft.AI.Web.xml
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.csprojAssemblyReference.cache
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.Migrations.InitialModel.resources
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.Migrations.AddIsSubscribedToCustomer.resources
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.Migrations.AddMenmbershipType.resources
