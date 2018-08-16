@@ -22,7 +22,12 @@ namespace Moviely.Controllers
         protected override void Dispose(bool disposing)
         {
             _context.Dispose()
-;        }
+;       }
+
+        public ActionResult New()
+        {
+            return View();
+        }
 
 
         // GET: Customer
