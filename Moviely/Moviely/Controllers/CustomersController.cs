@@ -35,6 +35,12 @@ namespace Moviely.Controllers
             return View(viewModel);
         }
 
+        [HttpPost]
+        public ActionResult Create(NewCustomerViewModel viewModel)
+        {
+            return View();
+        }
+
 
         // GET: Customer
         public ViewResult Index()
