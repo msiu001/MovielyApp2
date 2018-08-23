@@ -42,9 +42,25 @@ namespace Moviely.Controllers
 
 
         [HttpPost]
-        public ActionResult Create(Customer customer)
+        public ActionResult Save(Customer customer)
         {
-            _context.Customers.Add(customer);
+            if(customer.Id == 0)    //if is a new customer
+            {
+                _context.Customers.Add(customer);
+            }
+            else     // if customer is found then edit it
+            {
+                var customerInDB = _context.Customers.Single(c => c.Id == customer.Id);
+
+                // Mapper.Map(customer, customerInDb); // way to map all fields of customer in db
+
+                customerInDB.Name = customer.Name;
+                customerInDB.Birthdate = customer.Birthdate;
+                customerInDB.MembershipTypeId = customer.MembershipTypeId;
+                customerInDB.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
+
+            }
+            
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Customers");
