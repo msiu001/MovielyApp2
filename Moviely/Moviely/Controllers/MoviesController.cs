@@ -42,30 +42,29 @@ namespace Moviely.Controllers
         [HttpPost]
         public ActionResult Save(Movie movie)
         {
-            try
+            
+            if (movie.Id == 0)
             {
-                if (movie.Id == 0)
-                {
-                    _context.Movies.Add(movie);
-                }   
-           
-                _context.SaveChanges();
+                _context.Movies.Add(movie);
             }
-            catch (DbEntityValidationException dbEx)
+            else
             {
-                foreach (var validationErrors in dbEx.EntityValidationErrors)
-                {
-                    foreach (var validationError in validationErrors.ValidationErrors)
-                    {
-                        System.Console.WriteLine("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
-                    }
-                }
+                var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
+
+                movieInDb.Name = movie.Name;
+                movieInDb.ReleaseDate = movie.ReleaseDate;
+                movieInDb.DateAdded = movie.DateAdded;
+                movieInDb.NumberInStock = movie.NumberInStock;
+                movieInDb.GenreId = movie.GenreId;
             }
+
+
+            _context.SaveChanges();
+            
 
             return RedirectToAction("Index", "Movies");
 
         }
-
 
 
         public ActionResult Details(int id)
@@ -76,30 +75,7 @@ namespace Moviely.Controllers
             else
                 return View(movie);
         }
-
-        //// GET: Movies
-        //public ActionResult Random()
-        //{
-        //    var movie = new Movie()
-        //    {
-        //        Name = "Interestelar"
-        //    };
-
-        //    var customers = new List<Customer>
-        //    {
-        //        new Customer { Name = "Customer 1"},
-        //        new Customer { Name = "Customer 2"}
-        //    };
-
-
-        //    var viewModel = new RandomMovieViewModel
-        //    {
-        //        Movie = movie,
-        //        Customers = customers
-        //    };
-
-        //    return View(viewModel);
-        //}
+        
 
         public ViewResult Index()
         {
@@ -109,25 +85,26 @@ namespace Moviely.Controllers
         }
 
 
-        //private IEnumerable<Movie> GetMovies()
-        //{
-        //    return new List<Movie>
-        //    {
-        //        new Movie { Id = 1, Name = "Interestellar" },
-        //        new Movie { Id = 2, Name = "Jurassic Park" },
-        //        new Movie { Id = 3, Name = "Avatar" },
-        //        new Movie { Id = 4, Name = "Back to the Future" }
-        //    };
-        //}
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
 
-        //public ActionResult Edit (int id)
-        //{
-        //    return Content("id=" + id);
-        //}
+            if (movie == null)
+            {
+                return HttpNotFound();
+            }
+            else
+            {
+                var viewModel = new MovieFormViewModel
+                {
+                    Movie = movie,
+                    Genres = _context.Genres.ToList()
+                };
 
-        //public ActionResult Index(int pageIndex, string sortBy)
-        //{
-        //    if (!pageIndex.hasValue) { }
-        //}
+                return View("MovieForm", viewModel);
+            }
+        }
+
+
     }
 }
