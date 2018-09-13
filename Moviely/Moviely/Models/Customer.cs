@@ -10,7 +10,7 @@ namespace Moviely.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Name of Customer is Required!")]
         [StringLength(255)]
         public string Name { get; set; }
 

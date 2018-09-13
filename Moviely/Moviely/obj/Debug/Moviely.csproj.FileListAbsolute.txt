@@ -130,3 +130,4 @@ C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.csproj.CopyComplete
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.dll
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.pdb
+C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.csprojAssemblyReference.cache
