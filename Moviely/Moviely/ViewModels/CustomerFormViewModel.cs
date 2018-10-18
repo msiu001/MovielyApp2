@@ -23,7 +23,7 @@ namespace Moviely.ViewModels
                 }
                 else
                 {
-                    return "New Custmer";
+                    return "New Customer";
 
                 }
             }

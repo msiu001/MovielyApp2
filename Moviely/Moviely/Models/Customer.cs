@@ -22,6 +22,7 @@ namespace Moviely.Models
         public byte MembershipTypeId { get; set; }
 
         [Display(Name= "Date of Birthday")]
+        [Min18YearsIfAMember]
         public DateTime? Birthdate { get; set; }
     }
 }

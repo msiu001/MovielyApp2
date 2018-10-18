@@ -2,13 +2,13 @@ C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\VBCSCompiler.exe
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\System.Security.Cryptography.Primitives.dll
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\System.ValueTuple.dll
+C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\roslyn\VBCSCompiler.exe
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\ApplicationInsights.config
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\Moviely.dll.config
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\Moviely.dll
@@ -115,6 +115,7 @@ C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\Microsoft.AI.Web.xml
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.csprojAssemblyReference.cache
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.Migrations.InitialModel.resources
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.Migrations.AddIsSubscribedToCustomer.resources
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.Migrations.AddMenmbershipType.resources
@@ -130,4 +131,3 @@ C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.csproj.CopyComplete
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.dll
 C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.pdb
-C:\Users\Mario\Documents\PROJECTS\1 MVC Moch\Moviely\Moviely\Moviely\Moviely\obj\Debug\Moviely.csprojAssemblyReference.cache
