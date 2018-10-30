@@ -243,6 +243,10 @@
     <Compile Include="Migrations\201808150304003_PopulateGenreDataContent.Designer.cs">
       <DependentUpon>201808150304003_PopulateGenreDataContent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810300400049_PuttingRequiredIDOFF.cs" />
+    <Compile Include="Migrations\201810300400049_PuttingRequiredIDOFF.Designer.cs">
+      <DependentUpon>201810300400049_PuttingRequiredIDOFF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -375,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808150304003_PopulateGenreDataContent.resx">
       <DependentUpon>201808150304003_PopulateGenreDataContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810300400049_PuttingRequiredIDOFF.resx">
+      <DependentUpon>201810300400049_PuttingRequiredIDOFF.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

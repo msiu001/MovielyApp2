@@ -8,29 +8,29 @@ namespace Moviely.Models
 {
     public class Movie
     {
-        [Required]
+        
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Name of Movie is Required!")]
         [StringLength(255)]
         public string Name { get; set; }
 
         
         public Genre Genre { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Genre is Required!")]
         [Display(Name = "Genre")]
         public byte GenreId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Date Added is Required!")]
         [Display(Name="Date Added")]
         public DateTime DateAdded { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Release Date is Required!")]
         [Display(Name="Released Date")]
         public DateTime ReleaseDate { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Number of Movies in Stock Required!")]
         [Display(Name="Number in Stock")]
         public byte NumberInStock { get; set; }
 
