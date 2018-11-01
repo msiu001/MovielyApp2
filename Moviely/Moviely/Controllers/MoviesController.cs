@@ -40,15 +40,14 @@ namespace Moviely.Controllers
         }
 
         [HttpPost]
-        //ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
 
             if (!ModelState.IsValid)
             {
-                var viewModel = new MovieFormViewModel
+                var viewModel = new MovieFormViewModel(movie)
                 {
-                    Movie = movie,
                     Genres = _context.Genres.ToList()
                 };
                 return View("MovieForm", viewModel);
@@ -56,6 +55,7 @@ namespace Moviely.Controllers
 
             if (movie.Id == 0)
             {
+                movie.DateAdded = DateTime.Now;
                 _context.Movies.Add(movie);
             }
             else
@@ -64,7 +64,6 @@ namespace Moviely.Controllers
 
                 movieInDb.Name = movie.Name;
                 movieInDb.ReleaseDate = movie.ReleaseDate;
-                movieInDb.DateAdded = movie.DateAdded;
                 movieInDb.NumberInStock = movie.NumberInStock;
                 movieInDb.GenreId = movie.GenreId;
             }
@@ -106,9 +105,9 @@ namespace Moviely.Controllers
             }
             else
             {
-                var viewModel = new MovieFormViewModel
+                var viewModel = new MovieFormViewModel(movie)
                 {
-                    Movie = movie,
+
                     Genres = _context.Genres.ToList()
                 };
 

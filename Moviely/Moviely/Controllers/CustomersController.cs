@@ -42,6 +42,7 @@ namespace Moviely.Controllers
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer)
         {
 

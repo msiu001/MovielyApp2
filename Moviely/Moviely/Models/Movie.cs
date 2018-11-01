@@ -32,6 +32,7 @@ namespace Moviely.Models
 
         [Required(ErrorMessage = "Number of Movies in Stock Required!")]
         [Display(Name="Number in Stock")]
+        [Range(1, 100)]
         public byte NumberInStock { get; set; }
 
 
